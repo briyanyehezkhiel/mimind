@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Contoh Pertanyaan 1 -->
+        <TextView
+            android:id="@+id/question1"
+            android:textColor="@color/textColorLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Saya lebih suka bekerja dalam kelompok daripada sendiri."
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:textColor="@color/textColorLight"
+                android:id="@+id/option1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Tidak Setuju" />
+            <RadioButton
+                android:textColor="@color/textColorLight"
+                android:id="@+id/option1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Setuju" />
+            <RadioButton
+                android:textColor="@color/textColorLight"
+                android:id="@+id/option1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Netral" />
+            <RadioButton
+                android:textColor="@color/textColorLight"
+                android:id="@+id/option1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setuju" />
+            <RadioButton
+                android:textColor="@color/textColorLight"
+                android:id="@+id/option1_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sangat Setuju" />
+        </RadioGroup>
+
+        <!-- Tambahkan TextView dan RadioGroup lainnya untuk pertanyaan berikutnya -->
+
+        <!-- Tombol Submit -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@color/buttonTextColorDark"
+            android:textColor="@color/textColorLight"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

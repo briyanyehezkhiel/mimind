@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="backgroundLight">#121212</color> <!-- Warna latar belakang untuk mode terang -->
+    <color name="backgroundDark">#FFFFFF</color>
+<color name="textColorLight">#FFFFFF</color> <!-- Warna teks untuk mode terang -->
+<color name="textColorDark">#333333</color> <!-- Warna teks untuk mode gelap -->
+<color name="buttonTextColorLight">#FFFFFF</color> <!-- Warna teks untuk tombol di mode terang -->
+<color name="buttonTextColorDark">#333333</color> <!-- Warna teks untuk tombol di mode gelap -->
+    <color name="outputTextBackgroundLight">#1E1E1E</color> <!-- Warna latar belakang output untuk mode terang -->
+    <color name="outputTextBackgroundDark">#f0f0f0</color>
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Welcome Message -->
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, User!"
+            android:textColor="@color/textColorLight"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <!-- Input Text for User Message -->
+        <EditText
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your message"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <!-- Send Button -->
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:background="@color/backgroundLight"
+            android:textColor="@color/buttonTextColorLight"
+            android:layout_marginTop="8dp" />
+
+        <!-- TextView for Output (Response from AI) -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/fabMoodStress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:onClick="onFabClick"
+            android:src="@android:drawable/ic_input_add" />
+        <!-- Mood and Stress Level Group (Initially Hidden) -->
+        <LinearLayout
+            android:id="@+id/moodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingTop="8dp">
+
+            <!-- Mood -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorLight"
+                android:text="Select Mood:" />
+
+            <SeekBar
+                android:id="@+id/moodSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="4" />
+
+            <TextView
+                android:id="@+id/moodValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorLight"
+                android:text="Mood: Neutral" />
+
+        </LinearLayout>
+
+        <!-- Stress Level -->
+        <LinearLayout
+            android:id="@+id/stressGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingTop="8dp">
+
+            <!-- Stress Level -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorLight"
+                android:text="Select Stress Level:" />
+
+            <SeekBar
+                android:id="@+id/stressLevelSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="2" />
+
+            <TextView
+                android:id="@+id/stressLevelValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorLight"
+                android:text="Stress Level: Low" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:textColor="@color/textColorLight"
+            android:layout_marginTop="20dp"
+            android:background="@color/backgroundLight" />
+
+        <!-- RecyclerView for Chat History -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:background="@color/backgroundLight"
+            android:textColor="@color/buttonTextColorLight"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp" />
+
+        <!-- Go to Activity 2 Button -->
+        <Button
+            android:id="@+id/gotoActivity2Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mental Disorder Prediction"
+            android:background="@color/backgroundLight"
+            android:textColor="@color/buttonTextColorLight"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Floating Action Button (FAB) -->
+
+
+    </LinearLayout>
+</ScrollView>
